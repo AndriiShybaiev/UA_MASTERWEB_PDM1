@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>2.2 – Personalizacion mediante media queries</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        .caja {
+            height: 60px;
+            border: 1px solid black;
+        }
+        .amarillo { background-color: yellow; }
+
+        .top { background-color: yellow; }
+        @media (min-width: 576px) and (max-width: 767px) {
+            .top { background-color: orange; }
+        }
+        @media (min-width: 768px) {
+            .top { background-color: lawngreen; }
+        }
+        .letterA { background-color: red;}
+        @media (min-width: 768px) {
+            .letterA {
+                background-color: lightskyblue;
+            }
+        }
+        .lettersBC { background-color: red;}
+        @media (min-width: 576px) {
+            .lettersBC {
+                background-color: lightskyblue;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-12 d-flex justify-content-center align-items-center d-md-flex align-items-center justify-content-md-start top caja">Top</div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-4 letterA caja d-flex justify-content-center align-items-center d-md-flex align-items-center justify-content-md-start">A</div>
+        <div class="col-12 col-sm-6 col-md-4 lettersBC caja d-flex justify-content-center align-items-center">B</div>
+        <div class="col-12 col-sm-6 col-md-4 lettersBC caja d-flex justify-content-center align-items-center d-md-flex align-items-center justify-content-md-end">C</div>
+    </div>
+    <div class="row">
+        <div class="col12 col-md-6 caja amarillo d-flex justify-content-center align-items-center d-md-flex justify-content-md-start align-items-center">Left</div>
+        <div class="col12 col-md-6 caja amarillo d-flex justify-content-center align-items-center d-md-flex justify-content-md-end align-items-center">Right</div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
