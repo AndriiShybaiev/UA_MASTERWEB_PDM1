@@ -1,0 +1,24 @@
+.caja { height: 60px;}
+.azul { background-color: blue; }
+.gris { background-color: gray; }
+
+.carousel-img-container {
+    height: 500px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+@media (max-width: 768px) {
+    .carousel-img-container {
+        height: 300px;
+    }
+}

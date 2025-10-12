@@ -5,12 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ejercicio 4. Página principal</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"  integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <style>
-        .caja { height: 60px;}
-        .azul { background-color: blue; }
-        .gris { background-color: gray; }
-
-    </style>
+    <link rel="stylesheet" href="ejercicio4.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 <div class="container">
@@ -27,9 +23,6 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="#">Best dishes</a>
                     </li>
                     <li class="nav-item">
@@ -38,64 +31,97 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Healthy dishes</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ejercicio4-contacto.html">Contact</a>
+                    </li>
                 </ul>
             </div>
             <form class="d-flex">
                 <input class="form-control me-2" type="search"
                        placeholder="Enter text" aria-label="Search">
-                <button class="btn btn-outline-success"
-                        type="submit">Search</button>
+                <button class="btn btn-outline-success" type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
             </form>
         </div>
     </nav>
+    <div id="c1" class="carousel slide my-3" data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="carousel-img-container">
+                    <img src="beef.png" class="d-block w-100" alt="Beef Bourguignon">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-img-container">
+                    <img src="salmon.png" class="d-block w-100" alt="Salmon en Papillote">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-img-container">
+                    <img src="salad.png" class="d-block w-100" alt="Caprese Salad">
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="row">
         <div class="card col-12 col-sm-6 col-md-4">
-            <img src="bootstrap.jpg" class="card-img-top" alt="bootstrap-logo">
+            <img src="beef.png" class="card-img-top" alt="Beef Bourguignon">
             <div class="card-body">
-                <h5 class="card-title d-flex justify-content-center">Dish name 1</h5>
+                <h5 class="card-title d-flex justify-content-center">Beef Bourguignon</h5>
                 <p class="card-text">Some dish description Some dish description Some dish description Some dish description</p>
                 <div class="d-flex justify-content-center">
-                    <a href="ejercicio4-receta.html" class="btn btn-primary">Receipt</a>
+                    <a href="ejercicio4-receta.html" class="btn btn-primary">
+                        <i class="fa-solid fa-book-open me-2"></i>Receipt
+                    </a>
                 </div>
             </div>
         </div>
         <div class="card col-12 col-sm-6 col-md-4">
-            <img src="bootstrap.jpg" class="card-img-top" alt="bootstrap-logo">
+            <img src="salmon.png" class="card-img-top" alt="Salmon en Papillote">
             <div class="card-body">
-                <h5 class="card-title d-flex justify-content-center">Dish name 2</h5>
+                <h5 class="card-title d-flex justify-content-center">Salmon en Papillote</h5>
                 <p class="card-text">Some dish description Some dish description Some dish description Some dish description</p>
                 <div class="d-flex justify-content-center">
-                    <a href="ejercicio4-receta.html" class="btn btn-primary">Receipt</a>
+                    <a href="ejercicio4-receta.html" class="btn btn-primary">
+                        <i class="fa-solid fa-book-open me-2"></i>Receipt
+                    </a>
                 </div>
             </div>
         </div>
         <div class="card col-12 col-sm-6 col-md-4">
-            <img src="bootstrap.jpg" class="card-img-top" alt="bootstrap-logo">
+            <img src="salad.png" class="card-img-top" alt="Caprese Salad">
             <div class="card-body">
-                <h5 class="card-title d-flex justify-content-center">Dish name 3</h5>
+                <h5 class="card-title d-flex justify-content-center">Caprese Salad</h5>
                 <p class="card-text">Some dish description Some dish description Some dish description Some dish description</p>
                 <div class="d-flex justify-content-center">
-                    <a href="ejercicio4-receta.html" class="btn btn-primary">Receipt</a>
+                    <a href="ejercicio4-receta.html" class="btn btn-primary">
+                        <i class="fa-solid fa-book-open me-2"></i>Receipt
+                    </a>
                 </div>
             </div>
         </div>
         <div class="card col-12 col-sm-6 col-md-4">
-            <img src="bootstrap.jpg" class="card-img-top" alt="bootstrap-logo">
+            <img src="tiramisu.png" class="card-img-top" alt="Tiramisu">
             <div class="card-body">
-                <h5 class="card-title d-flex justify-content-center">Dish name 4</h5>
+                <h5 class="card-title d-flex justify-content-center">Tiramisu</h5>
                 <p class="card-text">Some dish description Some dish description Some dish description Some dish description</p>
                 <div class="d-flex justify-content-center">
-                    <a href="ejercicio4-receta.html" class="btn btn-primary">Receipt</a>
+                    <a href="ejercicio4-receta.html" class="btn btn-primary">
+                        <i class="fa-solid fa-book-open me-2"></i>Receipt
+                    </a>
                 </div>
             </div>
         </div>
         <div class="card col-12 col-sm-6 col-md-4">
-            <img src="bootstrap.jpg" class="card-img-top" alt="bootstrap-logo">
+            <img src="shrimp.png" class="card-img-top" alt="Shrimp Scampi">
             <div class="card-body">
-                <h5 class="card-title d-flex justify-content-center">Dish name 5</h5>
+                <h5 class="card-title d-flex justify-content-center">Shrimp Scampi</h5>
                 <p class="card-text">Some dish description Some dish description Some dish description Some dish description</p>
                 <div class="d-flex justify-content-center">
-                    <a href="ejercicio4-receta.html" class="btn btn-primary">Receipt</a>
+                    <a href="ejercicio4-receta.html" class="btn btn-primary">
+                        <i class="fa-solid fa-book-open me-2"></i>Receipt
+                    </a>
                 </div>
             </div>
         </div>
